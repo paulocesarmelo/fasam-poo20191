@@ -5,6 +5,8 @@
  */
 package lista1;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author paulocesarmelo
@@ -24,6 +26,11 @@ public class TesteAgenda {
         
         agenda1.imprimirNomes();
         
+        JOptionPane.showMessageDialog(null, "Programa Finalizado");
+        System.out.println("");
+        
+        String texto = JOptionPane.showInputDialog("Digite seu nome:");
+        JOptionPane.showMessageDialog(null, texto);
     }
     
 }
