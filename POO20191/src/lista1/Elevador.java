@@ -50,15 +50,21 @@ public class Elevador {
         }
     }
     
-    void descer(){
+    public void descer(){
         if(andarAtual > 0){
             andarAtual = andarAtual - 1;
         }else{
             System.out.println("Está no térreo!");
-        }
+        }  
+    }
+    
+    public void descer(int qtdAndar){
+        for(int i=0; i<qtdAndar; i++)
+            descer();
     }
     
     void imprimir(){
+       
         System.out.println("Qtd: "+pessoasP);
         System.out.println("Andar: "+andarAtual);
     }
