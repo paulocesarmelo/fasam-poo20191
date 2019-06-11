@@ -27,7 +27,8 @@ public class ContaEspecial extends Conta{
         return this.limite;
     }
     
-    public void sacar(double valor){
+    @Override
+    public boolean sacar(double valor){
         
         double saldoAtual = super.getSaldo() + this.limite;
         double temp;
@@ -43,8 +44,9 @@ public class ContaEspecial extends Conta{
             }else{
                 super.setSaldo(temp);
             }
-           
+         return true;  
         }
+        return false;
         
     }
     

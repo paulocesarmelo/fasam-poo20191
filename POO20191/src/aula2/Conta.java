@@ -70,8 +70,19 @@ public class Conta {
         //implementacao na proxima aula
     }
 
-    public void sacar(double valor){
-        saldo = saldo - valor;
+    public boolean sacar(double valor){
+        if(saldo > valor){
+            saldo = saldo - valor;
+            return true;
+        }else{
+            return false;
+        }
+    }
+    public void depositar(double valor){}
+    
+    public void transferir(Conta destino, double valor){
+        this.sacar(valor);
+        destino.depositar(valor);
     }
     
     

@@ -18,6 +18,24 @@ public class TesteEmpregado {
         
         Scanner input = new Scanner(System.in);
         
+        Horista empregadoHorista = new Horista("João da Silva");
+        
+        empregadoHorista.setCpf("231414");
+        empregadoHorista.setValorHora(90);
+        empregadoHorista.setHoras(80);
+        
+        System.out.println(empregadoHorista.vencimento());
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        /*
+        
         Assalariado a1 = new Assalariado("Paulo");
 
         a1.setCpf("2312413");
@@ -64,6 +82,6 @@ public class TesteEmpregado {
         
         empregados[0] = new Assalariado("Beltrano");
         empregados[1] = new Comissionado("YYY");
-        
+        */
     }
 }

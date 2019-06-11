@@ -38,7 +38,11 @@ public class Principal {
         c2.saldo = 10000;
         c3.saldo = -10;*/
         double salario=0;
-        c2.sacar(3000);
+        if(c2.sacar(3000)){
+            System.out.println("Saque realizado!");
+        }else{
+            System.out.println("Saque não realizado!");
+        }
         
         System.out.println(c2.consultarSaldo());
         
